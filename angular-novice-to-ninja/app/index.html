@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>My AngularJS App</title>
+  <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body>
+
+  <ul>
+    <li><a href="#/comment">Comment</a></li>
+    <li><a href="#/login">Login</a></li>
+    <li><a href="#/test">Test</a></li>
+    <li><a href="#/data-binding">Two-way data binding</a></li>
+    <li><a href="#/book-listing">Book listing</a></li>
+  </ul>
+
+  <div ng-view></div>
+
+  <div>Angular seed app: v<span app-version></span></div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+
+  <!-- Login Module -->
+  <script src="modules/login/loginModule.js"></script>
+  <script src="modules/login/js/controllers.js"></script>
+  <script src="modules/login/js/directives.js"></script>
+
+  <!-- Comment Module -->
+  <script src="modules/comment/commentModule.js"></script>
+  <script src="modules/comment/js/controllers.js"></script>
+  <script src="modules/comment/js/directives.js"></script>
+
+  <!-- Data binding Module -->
+  <script src="modules/data-binding/controllers.js"></script>
+
+  <!-- Book Listing Module -->
+  <script src="modules/book-listing/controllers.js"></script>
+
+</body>
+</html>
